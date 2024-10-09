@@ -7239,7 +7239,7 @@ html:only-child > head + body div.app_bd26cc > div.app_a01fb1 > div.layers_d4b6c
 }
 html:only-child > head + body div.app_bd26cc > div.app_a01fb1 > div.layers_d4b6c5.layers_a01fb1 > div.layer_d4b6c5.baseLayer_d4b6c5 + div.layer_d4b6c5 > div.standardSidebarView_c25c6d > div.sidebarRegion_c25c6d > div.sidebarRegionScroller_c25c6d.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 > nav.sidebar_c25c6d > div.side_a0 > div.info_c5a741::before {
 	content: "DevilBro" !important;
-	font-size: 12px !important;
+	font-size: 4px !important;
 	font-weight: 600 !important;
 	color: rgb(var(--accentcolor_v)) !important;
 	display: inline !important;
