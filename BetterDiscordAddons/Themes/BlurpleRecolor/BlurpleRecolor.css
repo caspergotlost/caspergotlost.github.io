@@ -1184,10 +1184,7 @@
 	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/partnerbadge_colors.svg) center/cover no-repeat;
 }
 .badge_b64375[src="https://cdn.discordapp.com/badge-icons/6df5892e0f35b051f8b61eace34f4967.png"],
-.profileBadge_b64375[src="https://cdn.discordapp.com/badge-icons/6df5892e0f35b051f8b61eace34f4967.png"] {
-	object-position: -999999px -999999px;
-	background: rgb(var(--accentcolor_v));
-	-webkit-mask: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/blurple/developerbadge_colors.svg) center/cover no-repeat;
+
 }
 
 .badge_b64375[src="https://cdn.discordapp.com/badge-icons/51040c70d4f20a921ad6674ff86fc95c.png"],
