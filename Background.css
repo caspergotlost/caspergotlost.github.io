@@ -6678,7 +6678,7 @@ html .bd-toast.toast-warn.icon::before {
 	border-radius: 2px;
 	box-sizing: border-box;
 	color: var(--interactive-normal);
-	font-size: 14px;
+	font-size: 8px;
 	font-weight: 500;
 	line-height: 18px;
 	margin-top: 2px;
