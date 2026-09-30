@@ -1,0 +1,74 @@
+<html>
+    
+    <!-- 2025 by Thomas Colthurst -->
+    <!-- Original at https://thomaswc.com/2025.html -->
+    <!-- Released under a Creative Commons Share Alike with Attribution License -->
+    <!-- See https://creativecommons.org/licenses/by-sa/4.0/ -->
+    <title>2025</title>
+    <style>
+
+        :root {
+            --bgColor: rgb(255, 240, 245);
+            --accentColor1: rgb(240, 128, 128);
+            --textColor: rgb(0,0,0);
+        }
+
+        body {
+            /*background-color: lavenderblush;  Or #fff or #ffffff */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bgColor);
+        }
+        h1 {text-align: center;
+            background-color: var(--accentColor1);
+        }
+
+        button {
+            border: none;
+            border-radius: 3px;
+            background-color: var(--accentColor1);
+        }
+
+    </style>
+    <body>
+        
+        <div class="floating">
+        <h1> Welcome to Oversized Connections!</h1>
+        
+        <button type="button" id="colormode" style="" enabled onclick="themetoggle()">Toggle Site Theme</button>
+
+        <h3>Games </h3>
+        <button type="button" id="originalGame" enabled onclick="window.location.href = 'test_version.html'"> Original</button>
+
+        </div>
+
+
+        <!-- Score: <span id="score">0</span> &nbsp; Mistakes: <span id="mistakes">0</span> &nbsp;
+            <button type="button" id="deselect" style="" disabled onclick="deselect()">Deselect</button> -->
+        
+        <div style="padding-top: 16px; position: absolute" id="board"></div>
+
+    </body>
+    <script>
+        const bgColorDark = "rgb(41, 37, 37)";
+        const bgColorLight = "rgb(255, 240, 245)";
+        const accentColorDark1 = "#874141";
+        const accentColorLight1 = "rgb(240, 128, 128)";
+        function setcolor() {
+            if (localStorage.getItem("theme") === "dark"){
+                document.documentElement.style.setProperty('--bgColor', bgColorDark);
+                document.documentElement.style.setProperty('--accentColor1', accentColorDark1);
+            } else {
+                document.documentElement.style.setProperty('--bgColor', bgColorLight);
+                document.documentElement.style.setProperty('--accentColor1', accentColorLight1);
+            }
+        }
+        function themetoggle() {
+            if (localStorage.getItem("theme") === "dark"){
+                localStorage.setItem("theme", "light");
+            } else {
+                localStorage.setItem("theme", "dark");
+            }
+            setcolor();
+        }
+        setcolor();
+    </script>
